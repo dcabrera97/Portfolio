@@ -5,6 +5,7 @@ import { Flex, Box } from "reflexbox";
 import Layout from "../components/Layout/Layout";
 import SectionOne from "../components/Sections/section1"
 import SectionTwo from "../components/Sections/section2"
+import SectionThree from "../components/Sections/section3"
 
 export default class index extends Component {
     render() {
@@ -12,6 +13,8 @@ export default class index extends Component {
             <Layout>
                 <SectionOne/>
                 <SectionTwo/>
+                <SectionThree/>
+                
             </Layout>
         )
     }
