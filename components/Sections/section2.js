@@ -13,7 +13,7 @@ export default class SectionThree extends Component {
                 <Flex justifyContent="center">
                     <Box>
 
-                        <SkillHeader>Skills</SkillHeader>
+                        <SkillHeader><Span>Ski</Span>lls</SkillHeader>
 
                     </Box>
                 </Flex>
@@ -49,6 +49,10 @@ const SkillHeader = styled.h1`
     padding-bottom: 50px;
     color: white;
     font-weight: 700;
+`
+
+const Span = styled.span`
+    color: #d34e54;
 `
 
 

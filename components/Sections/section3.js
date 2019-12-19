@@ -56,7 +56,7 @@ export default class SectionTwo extends Component {
 
                     <Flex justifyContent="center">
                         <Box>
-                            <PortHeader>Portfolio</PortHeader>
+                            <PortHeader><Span>Port</Span>folio</PortHeader>
                         </Box>
                     </Flex>
                     <Flex textAlign="center">
@@ -114,6 +114,10 @@ const PortHeader = styled.h1`
     padding-bottom: 100px;
     color: white;
     font-weight: 700;
+`
+
+const Span = styled.span`
+    color: #d34e54;
 `
 
 const PortNames = styled.h2`
