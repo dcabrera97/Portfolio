@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Link from "next/link";
 import styled, { css, keyframes } from "styled-components";
 import { Flex, Box } from "reflexbox";
-import { Sticky, StickyContainer } from "react-sticky";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export default class SectionOne extends Component {
     render() {
@@ -14,20 +14,20 @@ export default class SectionOne extends Component {
                     <HeaderMain>Davis Cabrera</HeaderMain>
                     <HeaderOff>Davis Cabrera</HeaderOff>
                     <Flex>
-                        <Box px={2} py={2} width={1/4}>
-                            <div p={1}>LinkedIn</div>
+                        <Box px={2} py={2} width={1 / 4}>
+                            <Icon icon={faEnvelope} />
                         </Box>
-                        <Box px={2} py={2} width={1/4}>
-                            <div p={1}>GitHub</div>
+                        <Box px={2} py={2} width={1 / 4}>
+                            <Icon icon={faEnvelope} />
                         </Box>
-                        <Box px={2} py={2} width={1/4}>
-                            <div p={1}>Email</div>
+                        <Box px={2} py={2} width={1 / 4}>
+                            <Icon icon={faEnvelope} />
                         </Box>
-                        <Box px={2} py={2} width={1/4}>
-                            <div p={1}>Resume</div>
+                        <Box px={2} py={2} width={1 / 4}>
+                            <Icon icon={faEnvelope} />
                         </Box>
                     </Flex>
-                </HeadDiv>    
+                </HeadDiv>
             </Section>
         );
     }
@@ -62,4 +62,10 @@ const HeaderMain = styled.h1`
     color: white;
     font-weight: 700;
     letter-spacing: 2px;
+`
+
+const Icon = styled(FontAwesomeIcon)`
+    width: 45px;
+    height: auto;
+    color: white;
 `
